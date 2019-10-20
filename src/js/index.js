@@ -1,3 +1,4 @@
+
 import * as searchView from "./view/searchView";
 import * as recipeView from "./view/recipeView";
 import * as listView from "./view/listView"
@@ -136,7 +137,7 @@ elements.likesList.addEventListener("click", async e => {
 
 
 elements.recipeContainer.addEventListener("click", (e) => {
-  
+
   let addToShoppingListDOM = e.target.closest(".recipe__add_to_cart");
   if (!addToShoppingListDOM)
     return;
@@ -152,11 +153,11 @@ elements.recipeContainer.addEventListener("click", (e) => {
 
 
 })
-elements.shoppingContainer.addEventListener("click",(e) => {
-  
+elements.shoppingContainer.addEventListener("click", (e) => {
+
 })
 elements.shoppingList.addEventListener("click", (e) => {
-  
+
   if (!e.target.closest(".shopping__item svg"))
     return;
   let id = e.target.closest(".shopping__item").id;
